@@ -27,7 +27,7 @@ def hypotenuse(a, b):
 def add(a, b): 
     return (a+b)
 
-def sub(a,b):
+def subtract(a,b):
     return (a-b)
 
 def mul(a,b):
@@ -40,7 +40,7 @@ def div(a, b):
     return result
         # print("Error: Division by zero is not allowed.")
 
-def log(a, b):
+def logarithm(a, b):
     try:
         result = math.log(b,a)
         return result
