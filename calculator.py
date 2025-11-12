@@ -29,21 +29,21 @@ def mul(a,b):
     return a*b
 
 def div(a, b):
-    try:
-        result = b / a
-        return result
-    except ZeroDivisionError:
-        print("Error: Division by zero is not allowed.")
-        return None
+    if a == 0:
+        raise ZeroDivisionError
+    result = b / a
+    return result
+        # print("Error: Division by zero is not allowed.")
 
 def log(a, b):
     try:
-        result = math.log(b, a)
+        result = math.log(b,a)
         return result
-    except ValueError:
-        print("Error: log() arguments must be positive and base cannot be 1.")
-        return None
+    except:
+        raise ValueError
+    
 def exp(a,b):
     return (a**b)
 
 
+print(log(10, 0.1))
