@@ -1,3 +1,8 @@
+# https://github.com/CBTTHH/lab11-WM-DZ.git
+# Partner 1: William Munro
+# Partner 2: David Zou
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
