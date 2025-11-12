@@ -46,4 +46,3 @@ def exp(a,b):
     return (a**b)
 
 
-print(log(10, 0.1))
