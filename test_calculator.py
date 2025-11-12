@@ -14,11 +14,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(0, 10), 0)
 
     def test_subtract(self):  # 3 assertions
-        self.assertEqual(sub(11, 4), 7)
-        self.assertEqual(sub(98, 99), -1)
-        self.assertEqual(sub(11, -5), 16)
-        self.assertEqual(sub(0, 4), -4)
-        self.assertEqual(sub(11, 0), 11)
+        self.assertEqual(subtract(11, 4), 7)
+        self.assertEqual(subtract(98, 99), -1)
+        self.assertEqual(subtract(11, -5), 16)
+        self.assertEqual(subtract(0, 4), -4)
+        self.assertEqual(subtract(11, 0), 11)
 
     def test_divide_by_zero(self):  # 1 assertion
 
@@ -32,28 +32,28 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_logarithm(self):  # 3 assertions
-        self.assertEqual(round(log(5, 125)), 3)
-        self.assertEqual(log(2, 32), 5)
-        self.assertEqual(log(10, 10000), 4)
-        self.assertEqual(log(2, 4), 2)
-        self.assertEqual(log(10, 1), 0)
+        self.assertEqual(round(logarithm(5, 125)), 3)
+        self.assertEqual(logarithm(2, 32), 5)
+        self.assertEqual(logarithm(10, 10000), 4)
+        self.assertEqual(logarithm(2, 4), 2)
+        self.assertEqual(logarithm(10, 1), 0)
 
 
  
     def test_log_invalid_base(self):  # 1 assertion
         with self.assertRaises(ValueError):
-            log(10, -1)
+            logarithm(10, -1)
 
         with self.assertRaises(ValueError):
-            log(0, -3)
+            logarithm(0, -3)
 
         with self.assertRaises(ValueError):
-            log(100, 0)
+            logarithm(100, 0)
             
     def test_log_invalid_argument(self):  # 1 assertion
         # log(x, base) — x must be > 0
         with self.assertRaises(ValueError):
-            log(0, 10)
+            logarithm(0, 10)
             
     def test_hypotenuse(self):  # 3 assertions
         self.assertEqual(hypotenuse(3, 4), 5)
