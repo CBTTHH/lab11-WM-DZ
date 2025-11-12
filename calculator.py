@@ -5,7 +5,20 @@ calculator.py
 One function per operation, in order.
 """
 import math
-# First example
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Cannot take the square root of a negative number.")
+        return math.sqrt(a)
+    except TypeError:
+        raise TypeError("Input must be a number.")
+
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except TypeError:
+        raise TypeError("Inputs must be numbers.")
+
 def add(a, b): 
     return (a+b)
 
