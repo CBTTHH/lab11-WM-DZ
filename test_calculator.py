@@ -67,6 +67,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(9), 3)
         self.assertAlmostEqual(square_root(2), 2 ** 0.5)
 
-# Do not touch this
+# Do not touch thiss
 if __name__ == "__main__":
     unittest.main()
