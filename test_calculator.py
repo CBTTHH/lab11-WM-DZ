@@ -1,4 +1,5 @@
 from calculator import *
+import unittest
 
 
 class TestCalculator(unittest.TestCase):
@@ -27,11 +28,6 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
-
-
-@ @-18
-
-, 38 + 28, 47 @ @
 
 
 #     fill in code
@@ -97,3 +93,4 @@ def test_log_invalid_base(self):  # 1 assertion
 
 # Do not touch this
 if __name__ == "__main__":
+    unittest.main()
